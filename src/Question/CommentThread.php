@@ -55,7 +55,7 @@ class CommentThread implements ContainerInjectableInterface
             $form = new CreateCommentForm(
                 $this->di,
                 $comment->id,
-                $comment->question_id,
+                $comment->question_id
             );
             $form->check();
             $acronym = $user->findWhere("id = ?", $comment->user_id);
