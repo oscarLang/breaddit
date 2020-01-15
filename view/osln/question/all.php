@@ -1,9 +1,11 @@
 <?php
 ?>
-<h1>All questions</h1>
-<h2> <a href="question/create">Post a new question</a> </h2>
+<div class="floating-block">
+    <h1>All questions</h1>
+    <h2> <a href="question/create">Post a new question</a> </h2>
+</div>
 <?php foreach ($items as $item): ?>
-    <div class="question-item">
+    <div class="question-item floating-block">
         <small>
             Posted by <a href="user/show/<?=$item["author"]?>">
                 <?=$item["author"]?>

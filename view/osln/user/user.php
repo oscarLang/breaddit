@@ -2,15 +2,17 @@
 namespace Osln\User;
 ?><!-- menu wrapper -->
 <?php if ($flashmessage): ?>
-    <div class="flashmessage">
+    <div class="flashmessage floating-block">
         <p><?= $flashmessage ?></p>
     </div>
 <?php endif; ?>
 <div class="region-main has-sidebar-right has-sidebar">
-    <h1>All questions posted by <?=$user->acronym?></h1>
+    <div class="floating-block">
+        <h1>All questions posted by <?=$user->acronym?></h1>
+    </div>
     <?php if (!empty($items)): ?>
         <?php foreach ($items as $item): ?>
-            <div class="question-item">
+            <div class="question-item floating-block">
                 <small>
                     Posted by <?=$item->acronym?> on <?=$item->created?>
                     Tags:
@@ -34,13 +36,14 @@ namespace Osln\User;
 </div>
 <?php // TODO: fixa att userna lltid visar från session ?>
 <div class="wrap-sidebar region-sidebar-right has-sidebar-right has-sidebar">
-    <div class="block user-block">
+    <div class="floating-block">
         <?php if ($user) : ?>
             <img src="<?=$user->gravatar?>" alt="user gravatar">
             <p>User <?=$user->acronym?></p>
             <p>Joined on <?=$user->created?></p>
-            <?php if ($userSession): ?>
-                <a href="../../user/updateuser/<?=$userSession["id"]?>">Update email and acronym</a>
+            <?php if ($userSession["acronym"] == $user->acronym): ?>
+                <a href="../../user/updateuser/<?=$userSession["id"]?>">Update email</a>
+                <p></p>
                 <a href="../../user/updatepass/<?=$userSession["id"]?>">Update password</a>
             <?php endif; ?>
         <?php endif; ?>

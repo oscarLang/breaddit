@@ -1,10 +1,10 @@
 <div class="wrap-sidebar region-sidebar-right has-sidebar-right has-sidebar">
-    <div class="block">
+    <div class="floating-block">
         <h3>Top users</h3>
         <ul>
             <?php foreach ($items as $user): ?>
                 <li>
-                    <a href="user/show/<?=$user->id?>"><?=$user->acronym?></a>
+                    <a href="user/show/<?=$user->acronym?>"><?=$user->acronym?></a>
                 </li>
             <?php endforeach; ?>
         </ul>
