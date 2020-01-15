@@ -5598,13 +5598,13 @@ fieldset {
 }
 html {
   overflow-y: scroll;
-  background-color: #424242;
+  background-color: #f0f5f9;
 }
 body {
   margin: 0;
   padding: 0;
-  color: #111;
-  background-color: #fff;
+  color: #1e2022;
+  background-color: #f0f5f9;
   font: 16px/1.5 Verdana, Geneva, sans-serif;
 }
 h1,
@@ -6557,7 +6557,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Base
  */
 /** ==============================================================
- * Header 
+ * Header
  */
 /**
  * A header style for dbwebb.se.
@@ -6670,12 +6670,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   text-decoration: none;
   transition: all 0.2s linear;
 }
-.site-logo-text a:hover {
-  color: #3B440D;
-  text-shadow: 2px -2px 2px #9FB129;
-}
 .site-logo-text-icon img {
-  vertical-align: bottom;
   display: none;
 }
 .logo-1 {
@@ -6812,7 +6807,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * A footer style for dbwebb.se.
  */
 .outer-wrap-footer {
-  background-color: #424242;
+  background-color: #f0f5f9;
   padding-top: 24px;
   padding-bottom: 48px;
 }
@@ -6937,17 +6932,14 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   border: 1px solid #6cbac4;
   color: #111;
 }
-.question-item {
-  padding: 1em;
-  border: 2px solid grey;
-  border-radius: 1em;
-}
 .question-item a {
   font-size: 32px;
   text-decoration: none;
 }
 .question-item small a {
   font-size: inherit;
+  text-decoration: none;
+  color: initial;
 }
 .thread-info {
   display: flex;
@@ -6993,6 +6985,33 @@ a:visited {
   margin-left: 4em;
   float: right;
 }
+.outer-wrap-header {
+  background-color: #52616b;
+  margin-bottom: 1em;
+}
+.htmlform {
+  border: none;
+}
+.floating-block {
+  background-color: #c9d6df;
+  border-radius: 5px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  margin-top: 1em;
+}
+.logo {
+  display: flex;
+}
+.logo img {
+  width: 80px;
+  height: auto;
+}
+.logo h3 {
+  margin: 0;
+  margin-left: 1em;
+  color: #FCBD67;
+}
 .site-logo {
   position: absolute;
   top: 40px;
@@ -7021,3 +7040,4 @@ a:visited {
 /**
  * My settings.
  */
+/* Color Theme Swatches in Hex */

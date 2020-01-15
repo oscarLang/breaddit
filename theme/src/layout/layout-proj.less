@@ -6,11 +6,10 @@
     small {
         a {
             font-size: inherit;
+            text-decoration: none;
+            color: initial;
         }
     }
-    padding: 1em;
-    border: 2px solid grey;
-    border-radius: 1em;
 }
 
 .thread-info {
@@ -76,4 +75,35 @@ a:visited {
 .user-block {
     margin-left: 4em;
     float: right;
+}
+
+.outer-wrap-header {
+    background-color: @navColor;
+    margin-bottom: 1em;
+}
+
+.htmlform {
+    border: none;
+}
+
+.floating-block {
+    background-color: @bgColorBody;
+    border-radius: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+}
+
+.logo {
+    display: flex;
+    img {
+        width: 80px;
+        height: auto;
+    }
+    h3 {
+        margin: 0;
+        margin-left: 1em;
+        color: #FCBD67;
+    }
 }
