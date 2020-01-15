@@ -30,11 +30,7 @@ return [
     "views" => [
         [
             "region" => "header-col-1",
-            "template" => "anax/v2/header/site_logo_text",
-            "data" => [
-                "homeLink"      => "",
-                "siteLogoText"  => "Breaddit",
-            ],
+            "template" => "osln/index/logo"
         ],
         [
             "region" => "header-col-2",
