@@ -88,10 +88,6 @@ class CreateForm extends FormModel
         } else {
             $allTagNames = $allSelectedTags;
         }
-        $this->form->addOutput(
-            "arr" .
-            implode($allTagNames, ", ")
-        );
 
 
         $user = $session->get("user");
@@ -101,10 +97,6 @@ class CreateForm extends FormModel
         $question->content = $this->form->value("Content");
         $question->user_id = $user["id"];
         $question->save();
-
-        $this->form->addOutput(
-            $question->id
-        );
 
         foreach ($allTagNames as $tagName) {
             $tag = new Tag();
@@ -130,10 +122,10 @@ class CreateForm extends FormModel
      * happen when the submit callback method returns true. This method
      * can/should be implemented by the subclass for a different behaviour.
      */
-    // public function callbackSuccess()
-    // {
-    //     $this->di->get("response")->redirect("question")->send();
-    // }
+    public function callbackSuccess()
+    {
+        $this->di->get("response")->redirect("question")->send();
+    }
 
 
 

@@ -137,7 +137,7 @@ class UserController implements ContainerInjectableInterface
         $form = new CreateUserForm($this->di);
         $form->check();
 
-        $page->add("anax/v2/article/default", [
+        $page->add("osln/user/form", [
             "content" => $form->getHTML(),
         ]);
 
@@ -152,7 +152,7 @@ class UserController implements ContainerInjectableInterface
         $form = new UpdatePasswordForm($this->di, $id);
         $form->check();
 
-        $page->add("anax/v2/article/default", [
+        $page->add("osln/user/form", [
             "content" => $form->getHTML(),
         ]);
 
@@ -167,7 +167,7 @@ class UserController implements ContainerInjectableInterface
         $form = new UpdateUserForm($this->di, $id);
         $form->check();
 
-        $page->add("anax/v2/article/default", [
+        $page->add("osln/user/form", [
             "content" => $form->getHTML(),
         ]);
 
@@ -176,8 +176,4 @@ class UserController implements ContainerInjectableInterface
         ]);
     }
 
-    // public function topAction() : object
-    // {
-    //
-    // }
 }

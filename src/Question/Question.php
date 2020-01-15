@@ -36,6 +36,7 @@ class Question extends ActiveRecordModel
                         ->from($this->tableName)
                         ->limit(3)
                         ->execute()
+                        ->orderBy("created DESC")
                         ->fetchAllClass(get_class($this));
         $questionPrint = [];
         foreach ($questions as $question) {
