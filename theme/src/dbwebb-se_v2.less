@@ -187,6 +187,7 @@ img.responsive {
 @import "layout/dbwebb-se_v2.less"; // Rearrange and move classic style to layout.less
 @import "layout/regions.less";
 @import "layout/layout-proj.less";
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap');
 
 .site-logo {
     position: absolute;
@@ -201,7 +202,7 @@ img.responsive {
 
 .rm-navbar {
     text-align: center;
-    font-family: @fontFamilyCambria;
+    font-family: @fontFamilyOswald;
     font-size: 1.5em;
     line-height: 0;
 }
@@ -225,13 +226,15 @@ img.responsive {
  * My settings.
  */
  /* Color Theme Swatches in Hex */
+@fontFamilyRoboto: 'Roboto', sans-serif;
+@fontFamilyOswald: 'Oswald', sans-serif;
 @bgColorHtml: #f0f5f9;
 @bgColorBody: #c9d6df;
 @colorBody:   #1e2022;
 @navColor: #52616b;
 
-@fontFamilyHeadings: @fontFamilyCambria;
-@fontFamilyBody:     @fontFamilyVerdana;
+@fontFamilyHeadings: @fontFamilyOswald;
+@fontFamilyBody:     @fontFamilyRoboto;
 @fontFamilyCode:     @fontFamilyCourier;
 
 @colorH1BorderBottom: #666; // Add to h4 also

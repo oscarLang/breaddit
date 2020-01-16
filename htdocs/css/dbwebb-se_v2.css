@@ -5605,7 +5605,7 @@ body {
   padding: 0;
   color: #1e2022;
   background-color: #f0f5f9;
-  font: 16px/1.5 Verdana, Geneva, sans-serif;
+  font: 16px/1.5 'Roboto', sans-serif;
 }
 h1,
 h2,
@@ -5613,7 +5613,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Oswald', sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -6939,7 +6939,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .question-item small a {
   font-size: inherit;
   text-decoration: none;
-  color: initial;
 }
 .thread-info {
   display: flex;
@@ -7012,6 +7011,20 @@ a:visited {
   margin-left: 1em;
   color: #FCBD67;
 }
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
 .site-logo {
   position: absolute;
   top: 40px;
@@ -7023,7 +7036,7 @@ a:visited {
 }
 .rm-navbar {
   text-align: center;
-  font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.5em;
   line-height: 0;
 }
